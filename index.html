@@ -1,7 +1,21 @@
+<!-- Adapted from google cloud sample code and google sheets sample code-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Keenan's Favorite Food Blogs</title>
+  <h1>Keenan's Favorite Food Blogs</h1>
+  <button id="authorize-button" style="display: none;">Authorize</button>
+  <button id="signout-button" style="display: none;">Sign Out</button>
+  
+</head>
 <body>
-<h1>Hello World</h1>
-<p>This will be Keenan's food blog organizing website :) </p>
+  <form id="fileform" action="">
+   <!--  Allow input from camera to work on smartphones -->
+    <input type="file" name="fileField" accept="image/*;capture=camera"><br /><br />
+     <input type="submit" name="submit" value="Submit">
+  </form>
+
+  <code style="white-space:pre" id="results"></code>
 </body>
 </html>
